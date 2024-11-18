@@ -4,16 +4,18 @@ import AddCategory from "./components/addCategory";
 export const GifApp = () => {
 
     const [categories  , setCategories] = useState([ 'Naruto','Seiya','One Piece' ]);
-    // const onAddCategory = ()=>{
-    //     setCategories(['saSas',...categories]);
-    //     console.log(categories);
-    // }
+    const onAddCategory = ( newCategory )=>{
+
+      if(categories.includes(newCategory)) return;
+      setCategories([newCategory,...categories]);
+        //console.log(categories);
+    }
   
   return (
     <>
     <h1>Gif App</h1>
 
-    <AddCategory setCategories = { setCategories }/>
+    <AddCategory onNewCategory = { onAddCategory }/>
 
     {/* INPUT*/ }
 
