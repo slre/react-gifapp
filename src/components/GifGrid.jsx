@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ImageItem } from './ImageItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 
-const GifGrid  = ({category}) => {
+export const GifGrid  = ({category}) => {
   
    
     
