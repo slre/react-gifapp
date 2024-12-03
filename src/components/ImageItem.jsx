@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export const ImageItem = ( {id,title,url} ) => {
     //console.log(url);
@@ -11,4 +12,9 @@ export const ImageItem = ( {id,title,url} ) => {
     </>
     
   )
+}
+ImageItem.propTypes = {
+    title:PropTypes.string.isRequired,
+    url:PropTypes.string.isRequired
+
 }

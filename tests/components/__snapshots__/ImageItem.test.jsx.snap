@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <ImageItem/> debe hacer match 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Naruto"
+      src="http://api.com/"
+    />
+    <p>
+      Naruto
+    </p>
+  </div>
+</div>
+`;
